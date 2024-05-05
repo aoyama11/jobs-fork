@@ -1,7 +1,7 @@
-%h1= @job.title
-%p= @job.description
-%p= @job.company
+%h1= @job_post.title
+%p= @job_post.description
+%p= @job_post.company
 = link_to "Home", root_path
-= link_to "Edit", edit_job_path(@job)
-= button_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }
+= link_to "Edit", edit_job_post_path(@job_post)
+= button_to "Delete", job_post_path(@job_post), method: :delete, data: { confirm: "Are you sure?" }
 
